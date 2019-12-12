@@ -9,6 +9,6 @@
 Make:<span th:text="${car.make}"></span><br />
 Model:<span th:text="${car.model}"></span><br />
 Year:<span th:text="${car.year}"></span><br />
-<a href="@{/delete/{id}(id=${todo.id})}"> Delete this car</a>
+<a th:href="@{/delete/{id}(id=${car.id})}"> Delete this car</a>
 </body>
 </html>
